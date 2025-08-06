@@ -52,10 +52,14 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const Login = React.lazy(() => import('./views/pages/login/Login'))
 const Register = React.lazy(() => import('./views/pages/register/Register'))
+const UserManage = React.lazy(() => import('./views/pages/users'))
+const ProductManagement = React.lazy(() => import('./views/pages/products'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
+  { path: '/dashboard/usermanage', name: 'UserManagement', element: UserManage },
+  { path: '/dashboard/products', name: 'ProductManagement', element: ProductManagement },
   { path: '/login', name: 'Login', element: Login },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
