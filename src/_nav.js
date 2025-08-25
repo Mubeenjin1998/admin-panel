@@ -27,6 +27,34 @@ const _nav = [
       text: 'NEW',
     },
   },
+    {
+    component: CNavTitle,
+    name: 'Products',
+  },
+  {
+    component: CNavItem,
+    name: 'products',
+    to: '/dashboard/products',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+    {
+    component: CNavItem,
+    name: 'Stores',
+    to: '/dashboard/stores',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+    {
+    component: CNavItem,
+    name: 'Brands',
+    to: '/dashboard/brands',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Inventory',
+    to: '/dashboard/inventory',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
   {
     component: CNavTitle,
     name: 'Theme',

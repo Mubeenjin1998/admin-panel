@@ -54,12 +54,21 @@ const Login = React.lazy(() => import('./views/pages/login/Login'))
 const Register = React.lazy(() => import('./views/pages/register/Register'))
 const UserManage = React.lazy(() => import('./views/pages/users'))
 const ProductManagement = React.lazy(() => import('./views/pages/products'))
+const StoreManagement = React.lazy(()=> import('./views/pages/stores'))
+const inventoryManagement = React.lazy(()=>import('./views/pages/inventory'))
+const AddProductPage = React.lazy(()=>import('./views/pages/products/addProduct'))
+const AddInventory =  React.lazy(()=>import('./views/pages/products/AddInventory'))
+
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/dashboard/usermanage', name: 'UserManagement', element: UserManage },
+  { path: '/dashboard/products/add', name: 'ProductManagement', element: AddProductPage },
+  { path: '/dashboard/products/add-inventory/:id', name: 'addInventory', element: AddInventory },
   { path: '/dashboard/products', name: 'ProductManagement', element: ProductManagement },
+  { path: '/dashboard/stores', name: 'StoreManagement', element: StoreManagement },
+  { path: '/dashboard/inventory', name: 'InventoryManagement', element: inventoryManagement },
   { path: '/login', name: 'Login', element: Login },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
